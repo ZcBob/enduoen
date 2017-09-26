@@ -1,0 +1,145 @@
+.ddd_bor{
+    border-top: 2px solid #76838f;
+}
+
+#news{
+    margin-top: 60px;
+}
+#news .about_t{
+    width: 100%;
+    position: relative;
+}
+#news .about_t img{
+    width: 100%;
+}
+#news .about_t h2{
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -58px;
+    margin-top: -14px;
+}
+#news_nav{
+    border-bottom: 1px solid #f0f2f5;
+}
+#news_nav .nav_t{
+    margin: 0;
+    overflow: hidden;
+}
+#news_nav .row ul li{
+    height: 50px;
+    display: inline;
+}
+#news_nav .row ul li a{
+    line-height: 50px;
+    padding: 0 10px;
+    color: #90939b;
+    display: inline-block;
+}
+#news_nav ul li a.link_act,#news_nav ul li a:hover{
+    color: #484848;
+}
+.input-search{
+    position: relative;
+}
+.form-group{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.form-control{
+    border-radius: 30px;
+    padding-right: 40px;
+}
+.input-search-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 100%;
+    padding: 0 10px;
+    background: 0 0;
+    border: none;
+    border-radius: 0 200px 200px 0;
+}
+
+#product{
+    padding: 60px 0 45px 0;
+    background-color: #ffffff;
+}
+#rowProduct{
+    margin: 0 auto;
+}
+#rowProduct .home_t{
+    width: 100%;
+    text-align: center;
+}
+#rowProduct .home_t p{
+    color:#848484;
+}
+#rowProduct .home_b{
+    margin-top: 30px;
+}
+.media h4{
+    width: 100%;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    color: #595959;
+    transition: all ease-out 0.2s;
+    border-bottom: 1px solid #E1E1E1;
+    text-align: left;
+}
+.media img{
+    width: 350px;
+}
+.media h4:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #3C3C3C;
+    margin-top: 46px;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.media a:hover h4:before{
+    width: 90%;
+}
+.media p {
+    color: #848484;
+    font-size: 13px;
+    line-height: 24px;
+    height: 50px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10px;
+}
+@media (max-width: 992px){
+    .media h4:before{
+        width: 0px;
+    }
+    .home_b a:hover h4:before{
+        width: 0;
+    }
+}
+@media (max-width: 766px) {
+    .media h4:before{
+        width: 0px;
+    }
+    .home_b a:hover h4:before{
+        width: 0;
+    }
+    .media img{
+        width:100%;
+    }
+    .media h4{
+        text-align: center;
+    }
+    .media p{
+        text-align: center;
+    }
+}

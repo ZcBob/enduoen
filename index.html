@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 申明IE浏览器需要用最新的渲染引擎来渲染当前的页面 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    viewport
+    视口
+
+    device-width
+    设备宽度
+
+    initial-scale=1
+    初始的缩放比例
+
+    -->
+    <!--为了兼容h5新标签里IE浏览器不兼容的标签-->
+
+    <script src="html5shiv/html5shiv.min.js"></script>
+    <script src="respond/respond.min.js"></script>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/bass.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Title</title>
+</head>
+<body>
+<header>
+<nav id="Nav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="logo" href="#">
+                <img src="images/logo.png"/>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse NavBar" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li  class="active"><a href="#">首页</a></li>
+                <li><a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">公司概况<span class="glyphicon glyphicon-menu-down"></span>
+                    <div class="top_b"></div></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./html/aboutus.html">公司简介</a></li>
+                        <li><a href="./html/wjs_news.html">团队风采</a></li>
+                        <li><a href="./html/contact.html">联系我们</a></li>
+                        <li><a href="#">招贤纳士</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">活动课程<span class="glyphicon glyphicon-menu-down"></span>
+                    <div class="top_b"></div></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./html/event.html">主题活动</a></li>
+                        <li><a href="./html/location.html">单元课程</a></li>
+                        <li><a href="./html/advance.html">进阶课程</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">心灵家园<span class="glyphicon glyphicon-menu-down"></span>
+                    <div class="top_b"></div></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./html/namic.html">最新动态</a></li>
+                        <li><a href="./html/culture.html">文化商品</a></li>
+                        <li><a href="./html/charity.html">慈善公益</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">精彩回顾<span class="glyphicon glyphicon-menu-down"></span>
+                    <div class="top_b"></div></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./html/report.html">现场报道</a></li>
+                        <li><a href="./html/exper.html">心得分享</a></li>
+                        <li><a href="./html/video.html">视频分享</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="dropdown-toggle dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">中心查询<span class="glyphicon glyphicon-menu-down"></span>
+                    <div class="top_b"></div></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./html/distribute.html">各地分布图</a></li>
+                        <li><a href="./html/exhibition.html">区中心展示</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+</header>
+<!--banner-->
+<div id="banner">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators hidden-lg hidden-md hidden-sm">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/banner01.jpg" alt="...">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/banner02.jpg" alt="...">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="right carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+    </div>
+</div>
+<!--product-->
+<div id="product">
+    <div class="container">
+        <div class="row" id="rowProduct">
+            <div class="home_t">
+                <h3>心灵家园</h3>
+                <p>—— home ——</p>
+                <p>传承爱与智慧</p>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media">
+                            <a href="./html/namic.html">
+                                <img src="images/pow/pow_01.png"/>
+                                <h4>最新动态</h4>
+                                <p>家园实时动态，蜕变故事分享，热门心灵文章推送，与您携手共前行...</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media">
+                            <a href="./html/culture.html">
+                                <img src="images/pow/pow_02.png"/>
+                                <h4>文化商品</h4>
+                                <p>心灵方舟、结缘品、经典著作、DVD、现金流、心灵魔法游戏，大量必看读物...</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media">
+                            <a href="./html/charity.html">
+                                <img src="images/pow/pow_03.png"/>
+                                <h4>慈善公益</h4>
+                                <p>传递爱的真心，延续爱的希望，用爱撑起一片艳阳天。爱心公益，有你有我...</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="glyphicon glyphicon-menu-right"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="glyphicon glyphicon-menu-left"></i>
+                </div>
+            </div>
+
+            <div class="home_b">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="media">
+                        <a href="./html/namic.html">
+                            <img src="images/pow/pow_01.png"/>
+                            <h4>最新动态</h4>
+                            <p>家园实时动态，蜕变故事分享，热门心灵文章推送，与您携手共前行...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="media">
+                        <a href="./html/culture.html">
+                            <img src="images/pow/pow_02.png"/>
+                            <h4>文化商品</h4>
+                            <p>心灵方舟、结缘品、经典著作、DVD、现金流、心灵魔法游戏，大量必看读物...</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="media">
+                        <a href="./html/charity.html">
+                            <img src="images/pow/pow_03.png"/>
+                            <h4>慈善公益</h4>
+                            <p>传递爱的真心，延续爱的希望，用爱撑起一片艳阳天。爱心公益，有你有我...</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container" id="swiper_container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="media">
+                            <a href="./html/namic.html">
+                                <img src="images/pow/pow_01.png"/>
+                                <h4>最新动态</h4>
+                                <p>家园实时动态，蜕变故事分享，热门心灵文章推送，与您携手共前行...</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media">
+                            <a href="./html/culture.html">
+                                <img src="images/pow/pow_02.png"/>
+                                <h4>文化商品</h4>
+                                <p>心灵方舟、结缘品、经典著作、DVD、现金流、心灵魔法游戏，大量必看读物...</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="media">
+                            <a href="./html/charity.html">
+                                <img src="images/pow/pow_03.png"/>
+                                <h4>慈善公益</h4>
+                                <p>传递爱的真心，延续爱的希望，用爱撑起一片艳阳天。爱心公益，有你有我...</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="glyphicon glyphicon-menu-right"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="glyphicon glyphicon-menu-left"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--number-->
+<div id="number">
+    <div class="container">
+        <div class="row" id="rowNumber">
+            <div class="activity_t">
+                <h3>活动课程</h3>
+                <p>—— class & activity ——</p>
+                <p>坚持，打磨自己</p>
+            </div>
+            <div class="activity_c">
+                <ul>
+                    <li><a href="#">主题活动</a></li>
+                    <li><a href="#">单元课程</a></li>
+                    <li><a href="#">进阶课程</a></li>
+                </ul>
+            </div>
+                <div class="swiper-container" id="swiper_cont">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="shown">
+                                <div class="widget widget-shadow">
+                                    <figure class="widget-header cover">
+                                        <a href="#" class="btnut">
+                                            <div class="mask"></div>
+                                            <img class="cover-image" src="./images/event/thumb.jpg"/>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="bintt">
+                                        <a href="#">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shown">
+                                <div class="widget widget-shadow">
+                                    <figure class="widget-header cover">
+                                        <a href="#" class="btnut">
+                                            <div class="mask"></div>
+                                            <img class="cover-image" src="./images/event/thumb02.jpg"/>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="bintt">
+                                        <a href="#">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shown">
+                                <div class="widget widget-shadow">
+                                    <figure class="widget-header cover">
+                                        <a href="#" class="btnut">
+                                            <div class="mask"></div>
+                                            <img class="cover-image" src="./images/event/thumb_03.jpg"/>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="bintt">
+                                        <a href="#">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shown">
+                                <div class="widget widget-shadow">
+                                    <figure class="widget-header cover">
+                                        <a href="#" class="btnut">
+                                            <div class="mask"></div>
+                                            <img class="cover-image" src="./images/event/thumb_04.jpg"/>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="bintt">
+                                        <a href="#">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shown">
+                                <div class="widget widget-shadow">
+                                    <figure class="widget-header cover">
+                                        <a href="#" class="btnut">
+                                            <div class="mask"></div>
+                                            <img class="cover-image" src="./images/event/thumb02.jpg"/>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="bintt">
+                                        <a href="#">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shown">
+                                <div class="widget widget-shadow">
+                                    <figure class="widget-header cover">
+                                        <a href="#" class="btnut">
+                                            <div class="mask"></div>
+                                            <img class="cover-image" src="./images/event/thumb_03.jpg"/>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="bintt">
+                                        <a href="#">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shown">
+                                <div class="widget widget-shadow">
+                                    <figure class="widget-header cover">
+                                        <a href="#" class="btnut">
+                                            <div class="mask"></div>
+                                            <img class="cover-image" src="./images/event/thumb_04.jpg"/>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="bintt">
+                                        <a href="#">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!--Add Arrows-->
+                    <div class="swiper-button-next" style="text-align: right">
+                        <i class="glyphicon glyphicon-menu-right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="glyphicon glyphicon-menu-left"></i>
+                    </div>
+                </div>
+                    <!--<div class="col-md-3 col-lg-3">-->
+                        <!--<div class="shown">-->
+                            <!--<div class="widget widget-shadow">-->
+                                <!--<figure class="widget-header cover">-->
+                                    <!--<a href="#" class="btnut">-->
+                                        <!--<div class="mask"></div>-->
+                                        <!--<img class="cover-image" src="./images/event/thumb.jpg"/>-->
+                                    <!--</a>-->
+                                <!--</figure>-->
+                            <!--</div>-->
+                            <!--<div class="widget-body">-->
+                                <!--<div class="bintt">-->
+                                    <!--<a href="#">查看详情</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-lg-3">-->
+                        <!--<div class="shown">-->
+                            <!--<div class="widget widget-shadow">-->
+                                <!--<figure class="widget-header cover">-->
+                                    <!--<a href="#" class="btnut">-->
+                                        <!--<div class="mask"></div>-->
+                                        <!--<img class="cover-image" src="./images/event/thumb02.jpg"/>-->
+                                    <!--</a>-->
+                                <!--</figure>-->
+                            <!--</div>-->
+                            <!--<div class="widget-body">-->
+                                <!--<div class="bintt">-->
+                                    <!--<a href="#">查看详情</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-lg-3">-->
+                        <!--<div class="shown">-->
+                            <!--<div class="widget widget-shadow">-->
+                                <!--<figure class="widget-header cover">-->
+                                    <!--<a href="#" class="btnut">-->
+                                        <!--<div class="mask"></div>-->
+                                        <!--<img class="cover-image" src="./images/event/thumb02.jpg"/>-->
+                                    <!--</a>-->
+                                <!--</figure>-->
+                            <!--</div>-->
+                            <!--<div class="widget-body">-->
+                                <!--<div class="bintt">-->
+                                    <!--<a href="#">查看详情</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-lg-3">-->
+                        <!--<div class="shown">-->
+                            <!--<div class="widget widget-shadow">-->
+                                <!--<figure class="widget-header cover">-->
+                                    <!--<a href="#" class="btnut">-->
+                                        <!--<div class="mask"></div>-->
+                                        <!--<img class="cover-image" src="./images/event/thumb02.jpg"/>-->
+                                    <!--</a>-->
+                                <!--</figure>-->
+                            <!--</div>-->
+                            <!--<div class="widget-body">-->
+                                <!--<div class="bintt">-->
+                                    <!--<a href="#">查看详情</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+        </div>
+    </div>
+</div>
+<!--ABOUT-->
+<div id="news">
+    <div class="container">
+        <div class="news_l col-sm-12 col-md-4 col-lg-4">
+            <img src="images/logo_02.png"/>
+        </div>
+        <div class="news_r col-sm-12 col-md-8 col-lg-8">
+            <h3>公司简介</h3>
+            <p>ABOUT US</p>
+            <div class="met">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp佛山市恩多恩心理咨询有限公司，创立于2007年，目前已在全国各地设立区中心50余家，并拥有专业的顾问和督导团队，
+                以及来自国内外具有丰富临床谘商经验的沟通师数百名。我们集心理沟通技术培训、一对一个案沟通、沟通师培养、亲子引导师
+                培养等服务项目为一体，为有需要帮助的人群提供专业的身心灵成长和心理咨询服务。</div>
+            <a href="#" class="more"></a>
+        </div>
+    </div>
+</div>
+<!--wjs_nwes-->
+<div id="wjs_news">
+    <div class="container">
+        <div class="tall_con">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="newsAll">
+                    <a href="#" class="newsAll_item">
+                        <img src="images/news_01.jpg"/>
+                    </a>
+                    <div class="newsAll_cont">
+                        <p class="newsAll_title">区中心团队</p>
+                        <p class="newsAll_keywords">心怀大爱    不忘初心</p>
+                        <p class="newsAll_desc">我们的每一个中心，就像每一个家，怀着同样的梦想，为大家提供最温馨舒心的心灵成长环境！</p>
+                        <a href="#" class="newsAll_more">MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="newsAll">
+                    <a href="#" class="newsAll_item">
+                        <img src="images/news_02.jpg"/>
+                    </a>
+                    <div class="newsAll_cont">
+                        <p class="newsAll_title">心灵顾问团队</p>
+                        <p class="newsAll_keywords">爱心天使    播撒幸福</p>
+                        <p class="newsAll_desc">她们坚信每一个人都应该得到幸福，时刻给予大家最真诚、贴心的品质服务，如阳光般温暖着我们。</p>
+                        <a href="#" class="newsAll_more">MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="newsAll">
+                    <a href="#" class="newsAll_item">
+                        <img src="images/news_03.jpg"/>
+                    </a>
+                    <div class="newsAll_cont">
+                        <p class="newsAll_title">沟通师团队</p>
+                        <p class="newsAll_keywords">光之行者    福慧双修</p>
+                        <p class="newsAll_desc">常年奔走于全国各地，陪伴、聆听、同理、协助，只为带您心灵回归平静喜悦，启动自我疗愈！</p>
+                        <a href="#" class="newsAll_more">MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-container" id="swiper_contain">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="newsAll">
+                        <a href="#" class="newsAll_item">
+                            <img src="images/news_01.jpg"/>
+                        </a>
+                        <div class="newsAll_cont">
+                            <p class="newsAll_title">区中心团队</p>
+                            <p class="newsAll_keywords">心怀大爱    不忘初心</p>
+                            <p class="newsAll_desc">我们的每一个中心，就像每一个家，怀着同样的梦想，为大家提供最温馨舒心的心灵成长环境！</p>
+                            <a href="#" class="newsAll_more">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="newsAll">
+                        <a href="#" class="newsAll_item">
+                            <img src="images/news_02.jpg"/>
+                        </a>
+                        <div class="newsAll_cont">
+                            <p class="newsAll_title">区中心团队</p>
+                            <p class="newsAll_keywords">心怀大爱    不忘初心</p>
+                            <p class="newsAll_desc">我们的每一个中心，就像每一个家，怀着同样的梦想，为大家提供最温馨舒心的心灵成长环境！</p>
+                            <a href="#" class="newsAll_more">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="newsAll">
+                        <a href="#" class="newsAll_item">
+                            <img src="images/news_03.jpg"/>
+                        </a>
+                        <div class="newsAll_cont">
+                            <p class="newsAll_title">沟通师团队</p>
+                            <p class="newsAll_keywords">光之行者    福慧双修</p>
+                            <p class="newsAll_desc">常年奔走于全国各地，陪伴、聆听、同理、协助，只为带您心灵回归平静喜悦，启动自我疗愈！</p>
+                            <a href="#" class="newsAll_more">MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="newsAll">
+                        <a href="#" class="newsAll_item">
+                            <img src="images/news_01.jpg"/>
+                        </a>
+                        <div class="newsAll_cont">
+                            <p class="newsAll_title">区中心团队</p>
+                            <p class="newsAll_keywords">心怀大爱    不忘初心</p>
+                            <p class="newsAll_desc">我们的每一个中心，就像每一个家，怀着同样的梦想，为大家提供最温馨舒心的心灵成长环境！</p>
+                            <a href="#" class="newsAll_more">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="newsAll">
+                        <a href="#" class="newsAll_item">
+                            <img src="images/news_02.jpg"/>
+                        </a>
+                        <div class="newsAll_cont">
+                            <p class="newsAll_title">区中心团队</p>
+                            <p class="newsAll_keywords">心怀大爱    不忘初心</p>
+                            <p class="newsAll_desc">我们的每一个中心，就像每一个家，怀着同样的梦想，为大家提供最温馨舒心的心灵成长环境！</p>
+                            <a href="#" class="newsAll_more">MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="newsAll">
+                        <a href="#" class="newsAll_item">
+                            <img src="images/news_03.jpg"/>
+                        </a>
+                        <div class="newsAll_cont">
+                            <p class="newsAll_title">沟通师团队</p>
+                            <p class="newsAll_keywords">光之行者    福慧双修</p>
+                            <p class="newsAll_desc">常年奔走于全国各地，陪伴、聆听、同理、协助，只为带您心灵回归平静喜悦，启动自我疗愈！</p>
+                            <a href="#" class="newsAll_more">MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--huigu-->
+<div id="wjs_look">
+    <div class="container">
+        <div class="row" id="rowLook">
+            <div class="look_t">
+                <h3>精彩回顾</h3>
+                <p>——  look back ——</p>
+                <p>见证，生命的蜕变</p>
+            </div>
+            <div class="look_time">
+                <ul>
+                    <li class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="look_lg">
+                            <div class="look_h">
+                                <span class="new_time">2017-07-05</span>
+                                <a href="#">回顾 |《畅享富贵，道在归位》公益课花絮</a>
+                                <div class="look_bb"></div>
+                            </div>
+                            <p class="des">上方“蓝字”↑关注我们心灵成长∣智慧分享精彩花絮▼盛夏时节，畅谈丰盛。2017年7月2日，以“畅享富.....</p>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="look_lg">
+                            <div class="look_h">
+                                <span class="new_time">2017-06-22</span>
+                                <a href="#">小孩舍不得爸爸上班，天天上演“十八相送”，感动上亿人！</a>
+                                <div class="look_bb"></div>
+                            </div>
+                            <p class="des">美国小男孩卡尔顿送爸爸出门上班，嘴里一直没有停过向爸爸倾诉爱意。从视频中可以看到，卡尔顿只穿尿布就出.....</p>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="look_lg">
+                            <div class="look_h">
+                                <span class="new_time">2017-05-25</span>
+                                <a href="#">【公益活动】黄淑玲老师《心灵彩绘》带你走进内心世界！</a>
+                                <div class="look_bb"></div>
+                            </div>
+                            <p class="des">这是一次走进内心世界，探索自我的机会，无论你是绘画大师还是没有任何绘画基础，只需要带上我们的心，就可.....</p>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="look_lg">
+                            <div class="look_h">
+                                <span class="new_time">2017-05-25</span>
+                                <a href="#">【案例】请相信我，我没有精神病</a>
+                                <div class="look_bb"></div>
+                            </div>
+                            <p class="des">来访者是一位27岁的女青年，三年前因为行为异常，经常发脾气，而被当地医院诊断为精神分裂症。几年来一直.....</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="look_b">
+                <a href="#" class="more_x"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="wjs_links">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>友情链接 :</li>
+            <li><a href="#">新浪博客</a> </li>
+            <li><a href="#">今日头条</a> </li>
+        </ol>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container text-center">
+        <p>版权所有 2008-2017 粤ICP备17017780号-1 </p>
+        <p>地址：佛山市禅城区季华二路智慧新城T5栋1001</p>
+        <p>电话：0757-82586588   传真：0757-82037367</p>
+        <p><p style="text-align: center;"><img src="http://www.enduoen.com/upload/201705/1494901416106575.jpg" title="1494901416106575.jpg"  style="width: 43px; height: 43px;"/><span style="line-height: 1.42857;">&nbsp; &nbsp; &nbsp; &nbsp;</span></p></p>
+        <div class="powered_by_metinfo">Powered by <a href="#">MetInfo</a> 5.3.16</div>
+    </div>
+</footer>
+<div id="top">
+    <span class="glyphicon glyphicon-menu-up"></span>
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="./dist/js/swiper.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="js/top.js"></script>
+</body>
+<script>
+    $(function () {
+        $('#banner').on('mouseover',(function () {
+            $('.carousel-control').css({display:'block'});
+        })).mouseout(function () {
+            $('.carousel-control').css({display:'none'});
+        })
+
+    })
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 2,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+
+    var swiper = new Swiper('#swiper_container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 60,
+        loop: true
+    });
+    var swiper = new Swiper('#swiper_contain', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+    var swiper = new Swiper('#swiper_cont', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+</script>
+</html>
